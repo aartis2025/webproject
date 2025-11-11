@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Trip Now| Aarti Travel Services</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f2f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      background: #f8f8f9;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+    .form-container h2 {
+      text-align: center;
+      color: #0c9fe9;
+      margin-bottom: 25px;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .form-container button {
+      width: 100%;
+      background: #0ab0de;
+      color: #d6e0e3;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .form-container button:hover {
+      background: #06a934;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Book a Trip</h2>
+    <form id="tripForm" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Enter your name"><br>
+      <input type="text" id="contact" placeholder="Enter your contact number"><br>
+      <input type="text" id="destination" placeholder="Enter destination"><br>
+      <input type="date" id="date"><br>
+      <input type="time" id="time"><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const contact = document.getElementById('contact').value.trim();
+      const destination = document.getElementById('destination').value.trim();
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+
+      if (!name || !contact || !destination || !date || !time) {
+        alert("⚠️ Please fill all the fields!");
+        return false;
+      }
+      alert(`🎉 Trip booked successfully!\n\nName: ${name}\nDestination: ${destination}\nDate: ${date}\nTime: ${time}`);
+      document.getElementById("tripForm").reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
