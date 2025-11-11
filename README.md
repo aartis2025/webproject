@@ -1,28 +1,21 @@
-# TRIP - Bus Travel Website HTML Template
+# Aarti Travel Services
 
 A simple, responsive, and modern bus travel template built using HTML5, CSS3, and JavaScript.
 
-## 🚀 Preview
-
-- [Live Demo](https://themewagon.github.io/BusTraveller/)
-
-## 📥 Download
-
-- [Download from ThemeWagon](https://themewagon.com/themes/bustraveller/)
 
 ## 🛠 Getting Started
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/themewagon/BusTraveller
+   git clone https://github.com/aartis2025/webproject
    ```
 
 2. Navigate to the Project Folder
 
 ```
 
-cd BusTraveller
+cd webproject
 
 ```
 
@@ -30,10 +23,8 @@ cd BusTraveller
 
 ## Author
 
-Design and UI concepts are crafted by [Code Prashtt](https://github.com/prashtt).
+Design and UI concepts are crafted by [Aarti Singh](https://github.com/aartis2025/).
 
 ## License
 
-- Design and code © [Code Prashtt](https://github.com/prashtt).
-- This project is licensed under the MIT License — free for personal and commercial use.
-- Distributed by [ThemeWagon](https://themewagon.com)
+- Design and code © [Aarti Singh](https://github.com/aartis2025/).
